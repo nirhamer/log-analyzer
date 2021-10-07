@@ -12,15 +12,15 @@ public class LogAnalyzer {
 
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
     public static void main(String[] args) {
-        Instant start = Instant.now();
         BufferedReader reader;
         try {
             reader = new BufferedReader(new FileReader(
-                    "hi.txt"));
+                    "1_build.txt"));
             String line = reader.readLine();
             while (line != null) {
                 Timestamp timestamp = new Timestamp(System.currentTimeMillis());
                 System.out.println(line + " " + timestamp + timestamp.getTime());
+                Instant start = Instant.now();
                 line = reader.readLine();
                 Instant end = Instant.now();
                 Duration timeElapsed = Duration.between(start, end);
