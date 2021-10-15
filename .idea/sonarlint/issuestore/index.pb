@@ -7,3 +7,5 @@ X
 (src/test/java/ru/iitdgroup/gpb/Test.java,3\9\39d6ededb91610e2f23585ce641b22ceefd80009
 _
 /src/main/java/ru/iitdgroup/gpb/LogAnalyzer.java,3\e\3ea28645d050f02eba89f95f8010c13b53653e89
+;
+1_build.txt,a\0\a0353f6695e7aabe1dccc5b98b44823890a75d8f

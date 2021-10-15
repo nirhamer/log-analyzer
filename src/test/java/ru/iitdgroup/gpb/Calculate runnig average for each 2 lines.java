@@ -8,7 +8,13 @@ class arr15
     {
         Scanner sc = new Scanner(System.in);
 
+        /**
+         * declaring variable int i,j,row,column
+         */
         int i,j,row,column;
+        /**
+         * declaring variable float sum values is set to 0 and average
+         */
         float sum=0,average;
         System.out.println("number of rows");
         row = sc.nextInt();
@@ -18,6 +24,10 @@ class arr15
         int[][] mat = new int[row][column];
 
         System.out.println("entries are as follows") ;
+        /**
+         * initiate a standard for loop rest of the loops below keep looping as long as the middle expression is true
+         * So line 31 will loop as long as I is  less than whatever value row has
+         */
         for(i=0;i<row;i++)
         {
             for(j=0;j<column;j++)
