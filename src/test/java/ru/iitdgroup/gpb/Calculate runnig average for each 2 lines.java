@@ -36,7 +36,7 @@ class arr15
             }
         }
 
-        System.out.println("entries are as follows") ;
+        System.out.println("entries are as follows");
         for(i=0;i<row;i++)
         {
             for(j=0;j<column;j++)

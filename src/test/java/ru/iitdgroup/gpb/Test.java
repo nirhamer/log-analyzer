@@ -1,35 +1,45 @@
 package ru.iitdgroup.gpb;
 
 
+import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
+public class Test {
 
-class Test {
+    public static void main(String[] args) throws IOException {
 
-    public static void main(String[] args)
-    {
+        Scanner s = null;
+
+        double sum = 0;
+
         try {
-            FileReader fr = new FileReader("hi.txt");
-            FileWriter fw = new FileWriter("hi2.txt");
-            //  a blank string to hold all the content
-            String str = "";
-            int i;
-            // Reading the file using read()
-            while ((i = fr.read()) != -1) {
+            s = new Scanner(
+            new BufferedReader(new FileReader("test2.txt")));
 
-                // Storing the data in the string
-                str += (char)i;
+            while (s.hasNext()) {
+
+                if (s.hasNextDouble()) {
+
+                    sum += s.nextDouble();
+
+                } else {
+
+                    s.next();
+
+                }
+
             }
-            System.out.println(str);
-            fw.write(str);
-            fr.close();
-            fw.close();
+
+        } finally {
+
+            s.close();
+
         }
-        catch (IOException e) {
-            System.out.println(
-                    "There might be IOException");
-        }
+
+        System.out.println(sum);
+
     }
+
 }
