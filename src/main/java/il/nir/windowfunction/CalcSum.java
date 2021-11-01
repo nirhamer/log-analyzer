@@ -1,4 +1,4 @@
-package ru.iitdgroup.gpb;
+package il.nir.windowfunction;
 
 import java.util.Arrays;
 
